@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-"""Models the city"""
+"""Model for the city class"""
 
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
+
 class City(Base):
-    """Class reppin city"""
+    """Class representing the cities table"""
     __tablename__ = 'cities'
 
     id = Column(Integer, nullable=False, primary_key=True,
